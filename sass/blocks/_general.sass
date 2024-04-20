@@ -1,0 +1,499 @@
+//body
+//	overflow-x: hidden
+	
+header
+	position: relative
+	min-height: 100vh
+	.subheader
+		&_lg
+			position: absolute
+			margin-top: 20px
+		&_last
+			margin-top: 42px
+		&_ss
+			margin-top: 42px
+			padding-right: 40px
+		a
+			text-decoration: none
+
+	.header_slider 
+		position: absolute
+		width: 100%
+		height: 100%
+		animation: header_slider 10s linear infinite 0s
+		background-repeat: no-repeat
+		background-size: cover
+		background-position: center center
+		animation-timing-function: ease-in-out
+		background-image: url("../img/bg/2.jpg")
+
+@keyframes header_slider
+	50% 
+		background-image: url("../img/bg/3.jpg")
+	100% 
+		background-image: url("../img/bg/1.jpg")	
+			
+.yellow
+	position: absolute
+	width: 624px
+	height: 369px
+	background-image: url("../icons/yellow.png")
+	bottom:0
+	z-index: 2
+	&_read
+		font-family: 'Archangelsk'
+		font-weight: 400
+		z-index: 3
+		color: #000
+		font-size: 62px
+		font-weight: 400 
+		padding: 70px 70px 25px 70px
+	&_black
+		display: block
+		z-index: 3
+		width: 272px
+		height: 78px
+		background: #000
+		margin: 25px 282px 70px 70px
+	&_more
+		display: block
+		color: #F8F200
+		text-align: center
+		text-decoration: none
+		line-height: 40px
+		font-size: 24px
+		font-weight: 700
+		padding: 20px 0px
+
+.City
+	position: relative
+	min-height: 817px
+	&_text
+		color: #000
+		margin-top: 70px
+		font-family: 'Archangelsk'
+		font-size: 62px
+		font-weight: 400
+	&_about
+		color: #777
+		font-size: 18px
+		font-weight: 400
+		width: 952px
+		min-height: 125px
+		line-height: 34px
+		margin-top: 25px
+		bottom: 0
+		.Cb
+			color: #52BEDC
+			font-size: 18px
+			font-weight: 700
+			line-height: 34px
+	.box_pictures 
+		padding-top: 70px
+		margin:0 auto
+		.table 
+			display: table
+			border-collapse: collapse
+			padding: 0
+			width:100%
+			.left, .right 
+				border-collapse: collapse
+				display: table-cell
+				margin: 0 
+				padding: 0
+				vertical-align: top
+			.right 
+				text-align: center
+			.left 
+				padding: 0 32px 0 0
+				.small1 
+					padding-bottom: 32px
+					margin: 0
+				.small2
+					margin: 0
+				.img 
+					display: block
+					width: 100%
+					height: auto
+				.image_1
+					background: url('../img/small1.jpg') center / cover no-repeat
+					width: 460px
+					height: 196px
+				.image_2
+					background: url('../img/small2.jpg') center / cover no-repeat
+					width: 460px
+					height: 196px
+			.image_3
+				background: url('../img/middle3.jpg') center / cover no-repeat
+				width: 788px
+				height: 424px
+.about
+	background-color: #000 
+	min-height: 884px
+	.bg2
+		background: url('../img/bg/black_white.jpg') center / cover no-repeat
+		width: 100%
+		height: 70px
+	&_win
+		display: flex
+		justify-content: flex-start 
+		align-items: center 
+	&_bgyellow
+		display: flex 
+		justify-content: center 
+		align-items: center 
+		width: 132px
+		height: 132px
+		margin-top: 15px
+		background: url('../icons/vector.png')
+	&_play
+		color: #FFF
+		font-family: Archangelsk
+		font-size: 62px
+		font-weight: 400
+		margin-top: 70px
+		padding-left: 32px
+
+	&_text
+		width: 952px
+		min-height: 91px
+		line-height: 34px
+		color: #FFF
+		font-weight: 400
+		font-family: Roboto
+		padding-top: 25px
+	&_Cb
+		color: #52BEDC
+		font-size: 18px
+		font-weight: 700
+		line-height: 34px
+
+	&_console
+		display: flex
+		flex-direction: row
+	.feed-form
+		padding-top: 97px
+		width: 36%
+		display: flex
+		flex-direction: column
+		align-items: flex-start
+		input
+			margin-top: 0px
+			font-family: Roboto
+			display: block
+			width: 100%
+			border: none
+			background-color: transparent
+			font-weight: 300
+			font-size: 18px
+			line-height: 21px
+			padding: 11px
+			padding-left: 0px
+			border-bottom: 1px solid #777
+			color: #fff
+			&:nth-child(2)
+				margin-top: 26px
+		#happy
+			width: 0%
+	.form-label
+		width: 100%
+		position: relative
+		display: flex
+		flex-direction: column
+		align-items: center
+		color: #fff
+		border: 1px dashed #777
+		padding: 40px
+		margin-top: 32px
+		input
+			position: absolute
+			opacity: 0
+		.form-label_text
+			display: inline-block
+			margin-bottom: 5px
+			font-weight: 300
+			font-family: Roboto
+			font-size: 18px
+			border-bottom: 1px solid #fff
+			&:after
+				content:""
+				position: absolute
+				left: 0
+				right: 0
+				bottom: 0
+				top: 0
+				opacity: 0
+				outline: 2px solid #fff
+	&_btn
+		margin-top: 35px
+		margin-bottom: 16px
+		padding: 19px 50px
+		color: #000
+		background-color: #F8F200
+		font-size: 18px
+		font-weight: 700
+		text-align: center
+		font-family: Roboto
+
+
+	.custom_checkbox 
+		position: absolute
+		z-index: -1
+		opacity: 0
+	.custom_checkbox+label 
+		display: inline-flex
+		align-items: center
+		user-select: none
+
+	.custom_checkbox+label 
+		&:before 
+			content: ''
+			display: inline-block
+			width: 1em
+			height: 1em
+			flex-shrink: 0
+			flex-grow: 0
+			border: 1px solid #777
+			margin-right: 0.5em
+			background-repeat: no-repeat
+			background-position: center center
+			background-size: 50% 50%
+	.custom_checkbox:checked+label
+		&:before 
+			border-color: #ffffff
+			background-color: #000000
+			background-image: url('../icons/check.svg')
+
+	.checkbox_text
+		position: relative
+		bottom: 3px
+		margin-left: 3px
+		font-family: 'Roboto'
+		font-size: 13px
+		font-weight: 300
+		color: #FFFFFF
+
+	&_picturecons
+		background: url('../img/console.png') center / cover no-repeat
+		width: 788px
+		height: 456px
+		margin: 25px 0 0 32px
+		background-size: 100% 100%
+
+
+.display
+	background-color: #F8F200
+	min-height: 746px
+	&_stripe
+		background: url('../img/bg/yellow_black.jpg') center / cover no-repeat
+		width: 100%
+		height: 70px
+	.display_HP
+		display: flex
+		margin-top: 70px
+		flex-direction: row
+		.left
+			width: calc(50% - 16px)
+			margin-right: 32px
+			.logo
+				display: flex
+				align-items: center
+				flex-direction: row
+				margin-top: 26px
+			.picturecons
+				background: url('../img/display.jpg') center (center / cover) no-repeat
+				width: 624px
+				height: 430px
+			.icons1
+				background: url('../icons/hp_logo.png') center (center / cover) no-repeat
+				width: 80px
+				height: 80px
+			.icons2
+				background: url('../icons/x.png') center (center / cover) no-repeat
+				width: 19.183px
+				height: 90px
+				margin: 0 30px
+				height: 20px
+				width: 90px
+			.icons3
+				background: url('../icons/cyber.png') center (center / cover) no-repeat
+				width: 320px
+				height: 80px
+		.right
+			width: calc(50% - 16px)
+			&_title
+				color: #000
+				font-family: Archangelsk
+				font-size: 62px
+				font-weight: 400
+				line-height: 63px
+			&_descr
+				margin-top: 25px
+				color: #000
+				font-family: 'Roboto'
+				font-size: 18px
+				font-weight: 400
+				line-height: 34px
+			.list
+				display: flex
+				margin-top: 25px
+				justify-content: space-around
+				flex-direction: column
+				.item
+					color: #000
+					margin-bottom: 26px
+					background-repeat: no-repeat
+					background-size: contain
+					padding-left: 42px
+					font-weight: 400
+					font-size: 18px
+					line-height: 21px
+ 
+					&:nth-child(1)
+						background-image: url('../icons/logo/color.png') 
+					&:nth-child(2)
+						background-image: url('../icons/logo/stars.png') 
+					&:nth-child(3)
+						background-image: url('../icons/logo/motion.png')  
+			.btn
+				margin-bottom: 16px
+				padding: 19px 50px
+				color: #F8F200
+				background-color: #000
+				font-size: 18px
+				font-weight: 700
+				text-align: center
+				font-family: Roboto
+				margin-left:0
+
+.store
+	min-height: 717px
+	background-color: black
+	&_bg1
+		background: url('../img/bg/bg_1.jpg') left (center/ contain) no-repeat
+		background-size: 50% 100%
+		height: 717px
+		.store_right
+			padding-left: 656px
+			padding-top: 70px
+			margin-left: 32px
+			.buy_game	
+				color: #FFF
+				font-family: Archangelsk
+				font-size: 62px
+				font-weight: 400
+			.descr
+				padding-top: 25px 
+				color: #52BEDC
+				font-family: Roboto
+				font-size: 24px
+				font-weight: 700
+			.game_list
+				list-style-type: none
+				margin-top: 21px
+				padding:0
+				.game_item
+					&:nth-child(1)
+						background: url('../icons/logo/disk.png') center (center/ contain ) no-repeat
+						color: #ffffff		
+						margin-bottom: 26px
+						padding-left: 28px
+						font-weight: 400
+						font-size: 18px
+						line-height: 21px
+						background-position: 5px 
+					&:nth-child(2)
+						background: url('../icons/logo/wwg.png') center (center/ contain) no-repeat
+						color: #ffffff			
+						margin-bottom: 26px
+						padding-left: 28px
+						font-weight: 400
+						font-size: 18px
+						line-height: 21px
+						background-position: 5px 
+					&:nth-child(3)
+						background: url('../icons/logo/collections.png') center (center/ contain) no-repeat
+						color: #ffffff			
+						margin-bottom: 26px
+						padding-left: 28px
+						font-weight: 400
+						font-size: 18px
+						line-height: 21px
+						background-position: 5px 
+			.store_block
+				padding-top: 25px
+				margin: 0 auto
+				margin-bottom: 76.5px
+				margin: 0
+				width: 319px	
+				.icons_platform_row_1
+					display: flex
+					flex-direction: row
+					justify-content: center
+					.item_1
+						width: 62px
+						height: 35.188px
+						background: url('../icons/logo/PC.png') center (center / cover) no-repeat
+					.item_2
+						width: 178px
+						height: 35.188px
+						margin-left: 79px
+						background: url('../icons/logo/xbox.png') center (center / cover) no-repeat
+				.icons_platform_row_2
+					display: flex
+					flex-direction: row
+					justify-content: center
+					.item_3
+						width: 58px
+						height: 50.268px
+						margin-top: 47.81px
+						background: url('../icons/logo/stadia.png') center (center / cover) no-repeat
+					.item_4
+						width: 168.627px
+						height: 35.324px
+						margin: 55.59px 0px 0 80px
+						background: url('../icons/logo/ps4.png') center (center / cover) no-repeat
+
+.footer
+	&_upper
+		height: 100px
+		display: flex
+		flex-direction: row
+		.footer_icons
+			display: flex
+			flex-direction: row
+			justify-content: flex-start
+			position: relative
+			align-items: center
+	&_2077
+		background: url('../icons/cyber.png') center (center / cover) no-repeat
+		width: 295.991px
+		height: 73.489px
+		margin-right: 32px
+	&_CDlogo
+		width: 172.05px
+		height: 74px
+		background: url('../icons/CD_logo.png') center (center / cover) no-repeat
+	&_links
+		margin-left: 390.95px
+		display: flex
+		align-items: center
+		font-family: Roboto
+		font-size: 18px
+		font-weight: 400
+		&_item_1
+			color: #000
+			text-decoration: none
+		&_item_2
+			color: #000
+			text-decoration: none
+			padding-left: 32px
+	&_lower
+		height: 40px
+		background: #000
+		color: #FFF
+		text-align: center
+		font-family: Roboto
+		font-size: 12px
+		font-weight: 400
+		padding-top: 13px
